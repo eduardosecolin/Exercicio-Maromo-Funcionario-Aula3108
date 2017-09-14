@@ -57,6 +57,11 @@ public class Funcionario {
         System.out.println("O departamento.: "+ this.getDepartamento());
         System.out.println("O salario......: "+ this.getSalario());
         System.out.println("O RG...........: "+ this.getRg());
-        System.out.println("Esta na empresa: "+ this.getEstaNaEmpresa());
+        //System.out.println("Esta na empresa: "+ this.getEstaNaEmpresa());
+        if(this.getEstaNaEmpresa() == true){
+            System.out.println("Você esta na empresa!!!");
+        }else if(this.getEstaNaEmpresa() == false){
+            System.out.println("Você não esta na empresa!!!");
+        }
     }
 }

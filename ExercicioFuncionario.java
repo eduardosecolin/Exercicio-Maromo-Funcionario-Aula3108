@@ -55,10 +55,11 @@ public class ExercicioFuncionario {
         System.out.print("Você esta na empresa?: ");
         String s = teclado.nextLine();
         String n = teclado.nextLine();
-        
-        if(f[indice].getEstaNaEmpresa() == true && "s".equalsIgnoreCase(s)){
+        if("s".equalsIgnoreCase(s)){
+            f[indice].setEstaNaEmpresa(true);
             System.out.print("Você esta na empresa!");
-        }else if(f[indice].getEstaNaEmpresa() == false && "n".equalsIgnoreCase(n)){
+        }else if("n".equalsIgnoreCase(n)){
+            f[indice].setEstaNaEmpresa(false);
             System.out.println("Você não esta na empresa!");
         }
         indice++;
@@ -73,7 +74,7 @@ public class ExercicioFuncionario {
             System.out.println("2 - Bonificar");
             System.out.println("3 - Consultar");
             System.out.println("9 - Sair");
-            System.out.print("Entr com a opçao: ");
+            System.out.print("Entre com a opçao: ");
             opc = t.nextInt();
             switch (opc){
                 case 1:
